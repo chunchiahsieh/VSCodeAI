@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分類管理 - 記帳管理系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>記帳管理系統</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="reports.html">報表</a>
+            <a href="categories.html">分類管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-management">
+            <h2>分類管理</h2>
+            <div class="category-form">
+                <h3>新增分類</h3>
+                <form id="categoryForm">
+                    <div>
+                        <label for="categoryName">分類名稱:</label>
+                        <input type="text" id="categoryName" required>
+                    </div>
+                    <button type="submit">新增分類</button>
+                </form>
+            </div>
+
+            <div class="category-list">
+                <h3>現有分類</h3>
+                <ul id="categoryList">
+                    <!-- 動態生成的分類將顯示在這裡 -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 記帳管理系統</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

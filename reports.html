@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支出報表 - 記帳管理系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>記帳管理系統</h1>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="reports.html">報表</a>
+            <a href="categories.html">分類管理</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reports">
+            <h2>支出報表</h2>
+            <div class="chart-container">
+                <canvas id="expenseChart"></canvas>
+            </div>
+            <div class="summary">
+                <h3>支出摘要</h3>
+                <div id="summaryContent"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 記帳管理系統</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
