@@ -1,0 +1,19 @@
+資料庫名稱,欄位名稱,欄位類型,選項
+Clients,名稱,Title,
+Clients,聯絡資訊,Text,
+Clients,備註,Text,
+Projects,名稱,Title,
+Projects,客戶,Relation,Clients 資料庫
+Projects,開始日期,Date,
+Projects,結束日期,Date,
+Projects,狀態,Select,"進行中, 已完成, 暫停"
+Tasks,名稱,Title,
+Tasks,專案,Relation,Projects 資料庫
+Tasks,負責人,Person,
+Tasks,截止日期,Date,
+Tasks,狀態,Select,"待辦, 進行中, 已完成"
+Payments,金額,Number,美元格式
+Payments,日期,Date,
+Payments,專案,Relation,Projects 資料庫
+Payments,客戶,Relation,Clients 資料庫
+Payments,付款方式,Select,"現金, 信用卡, 轉帳"

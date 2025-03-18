@@ -1,0 +1,8 @@
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.csproj.AssemblyReference.cache
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.AssemblyInfoInputs.cache
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.AssemblyInfo.cs
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.csproj.CoreCompileInputs.cache
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Disk F\Aga\VSCode AI\MyWebAPI\obj\Debug\net8.0\MyWebAPI.sourcelink.json

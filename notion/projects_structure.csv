@@ -1,0 +1,6 @@
+欄位名稱,欄位類型,選項
+名稱,Title,
+客戶,Relation,Clients 資料庫
+開始日期,Date,
+結束日期,Date,
+狀態,Select,"進行中, 已完成, 暫停"

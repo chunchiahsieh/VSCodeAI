@@ -1,0 +1,6 @@
+欄位名稱,欄位類型,選項
+金額,Number,美元格式
+日期,Date,
+專案,Relation,Projects 資料庫
+客戶,Relation,Clients 資料庫
+付款方式,Select,"現金, 信用卡, 轉帳"

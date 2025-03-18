@@ -1,0 +1,6 @@
+欄位名稱,欄位類型,選項
+名稱,Title,
+專案,Relation,Projects 資料庫
+負責人,Person,
+截止日期,Date,
+狀態,Select,"待辦, 進行中, 已完成"
