@@ -66,22 +66,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // 渲染支出記錄
     function renderExpenses() {
         const expenseTable = document.getElementById('expenseTable');
-        if (expenseTable) {
-            expenseTable.innerHTML = '';
-            expenses.forEach((expense, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${expense.date}</td>
-                    <td>$${expense.amount}</td>
-                    <td>${expense.category}</td>
-                    <td>${expense.description}</td>
-                    <td>
-                        <button onclick="deleteExpense(${index})">刪除</button>
-                    </td>
-                `;
-                expenseTable.appendChild(row);
-            });
-        }
+        if (!expenseTable) return;
+        
+        expenseTable.innerHTML = '';
+        expenses.forEach((expense, index) => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${expense.date}</td>
+                <td>$${expense.amount}</td>
+                <td>${expense.category}</td>
+                <td>${expense.description}</td>
+                <td>
+                    <button onclick="deleteExpense(${index})">刪除</button>
+                </td>
+            `;
+            expenseTable.appendChild(row);
+        });
+    }
+
+    // 初始化時渲染支出記錄
+    if (document.getElementById('expenseTable')) {
+        renderExpenses();
     }
 
     // 渲染分類列表
@@ -143,6 +148,24 @@ document.addEventListener('DOMContentLoaded', function() {
     function saveToLocalStorage() {
         localStorage.setItem('expenses', JSON.stringify(expenses));
         localStorage.setItem('categories', JSON.stringify(categories));
+    }
+
+    // 打開Modal
+    window.openModal = function() {
+        document.getElementById('expenseModal').style.display = 'block';
+    }
+
+    // 關閉Modal
+    window.closeModal = function() {
+        document.getElementById('expenseModal').style.display = 'none';
+    }
+
+    // 點擊Modal外部關閉
+    window.onclick = function(event) {
+        const modal = document.getElementById('expenseModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
     }
 
     // 刪除支出記錄
