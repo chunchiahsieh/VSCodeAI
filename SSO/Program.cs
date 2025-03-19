@@ -1,10 +1,18 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SSO.Data;
-using SSO.Model; // 🔥 確保導入你的 ApplicationUser
+using SSO.Models; // 🔥 確保導入你的 ApplicationUser
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// 🔹 設定資料庫連線
+builder.Services.AddDbContext<SSOContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 // 加入控制器與Swagger服務
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -44,18 +52,22 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// 🔹 設定資料庫連線
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// 🔹 註冊 Identity（使用 ApplicationUser）
-builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
-
-// 🔹 啟用驗證
-builder.Services.AddAuthentication();
-builder.Services.AddAuthorization();
+// 🔹 設定 JWT 驗證
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+            ValidAudience = builder.Configuration["Jwt:Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+        };
+    });
 
 var app = builder.Build();
 
@@ -72,5 +84,7 @@ if (app.Environment.IsDevelopment())
 // 🔹 加入驗證與授權
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();
