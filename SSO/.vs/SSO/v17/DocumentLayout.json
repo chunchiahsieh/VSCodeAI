@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:controllers\\userrolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\schema\\table.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:schema\\table.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|c:\\disk f\\aga\\vscode ai\\sso\\schema\\table.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{57203521-F36C-4135-894C-F320AE46F790}|SSO.csproj|solutionrelative:schema\\table.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +35,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T08:18:41.421Z",
+              "Title": "table.sql ",
+              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Schema\\table.sql",
+              "RelativeDocumentMoniker": "Schema\\table.sql",
+              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Schema\\table.sql",
+              "RelativeToolTip": "Schema\\table.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-19T09:45:00.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Title": "UserRolesController.cs",
+              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\UserRolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserRolesController.cs",
+              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\UserRolesController.cs",
+              "RelativeToolTip": "Controllers\\UserRolesController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T07:52:40.993Z",
+              "WhenOpened": "2025-03-19T09:38:56.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "Controllers\\RolesController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAIwBkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:33:27.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Disk F\\Aga\\VSCode AI\\SSO\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAYwIEAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T09:31:40.327Z",
               "EditorCaption": ""
             }
           ]
