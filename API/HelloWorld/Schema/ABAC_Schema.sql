@@ -1,3 +1,18 @@
+CREATE TABLE PagePermissions (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    SystemName VARCHAR(50),  -- 🔥 新增：區分系統
+    RoleId INT,
+    FOREIGN KEY (RoleId) REFERENCES Roles(Id),
+    Resource VARCHAR(50),  
+    [Page] VARCHAR(50),  
+    CanView BIT,
+    CanEdit BIT,
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    CreatedBy INT NULL,
+    UpdatedAt DATETIME DEFAULT GETDATE(),
+    ModifiedBy INT NULL, 
+);
+
 CREATE TABLE FieldPermissions (
     Id INT PRIMARY KEY AUTO_INCREMENT,
     SystemName VARCHAR(50),  -- 🔥 新增：區分系統
@@ -10,9 +25,7 @@ CREATE TABLE FieldPermissions (
     CreatedAt DATETIME DEFAULT GETDATE(),
     CreatedBy INT NULL,
     UpdatedAt DATETIME DEFAULT GETDATE(),
-    ModifiedBy INT NULL,
-    FOREIGN KEY (CreatedBy) REFERENCES Users(Id),
-    FOREIGN KEY (ModifiedBy) REFERENCES Users(Id)
+    ModifiedBy INT NULL, 
 );
 
 CREATE TABLE MenuPermissions (
@@ -26,8 +39,7 @@ CREATE TABLE MenuPermissions (
     CreatedBy INT NULL,
     UpdatedAt DATETIME DEFAULT GETDATE(),
     ModifiedBy INT NULL,
-    FOREIGN KEY (CreatedBy) REFERENCES Users(Id),
-    FOREIGN KEY (ModifiedBy) REFERENCES Users(Id)
+    
 );
 
 CREATE TABLE APIPermissions (
@@ -42,6 +54,5 @@ CREATE TABLE APIPermissions (
     CreatedBy INT NULL,
     UpdatedAt DATETIME DEFAULT GETDATE(),
     ModifiedBy INT NULL,
-    FOREIGN KEY (CreatedBy) REFERENCES Users(Id),
-    FOREIGN KEY (ModifiedBy) REFERENCES Users(Id)
+    
 );
